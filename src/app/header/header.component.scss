@@ -1,0 +1,39 @@
+.container-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+}
+
+.header {
+  background: #000000;
+  opacity: 0.3;
+
+  &__logo {
+    margin-right: 170px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+  }
+
+  &__list-item {
+    transition: .2s all;
+
+    &:hover {
+      transform: scale(1.03);
+      border-bottom: 1px solid white;
+    }
+  }
+
+  &__list-link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+}

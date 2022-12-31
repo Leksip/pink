@@ -1,0 +1,77 @@
+.start-page {
+  width: 100%;
+  height: 850px;
+  background: url("../../assets/image/back-desktop.jpg") no-repeat;
+  position: relative;
+
+  &__phone-image {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    padding: 180px 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info-title {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+  }
+
+  &__info-button {
+    padding: 20px 30px;
+    margin-bottom: 75px;
+    border: 3px solid #FFFFFF;
+    border-radius: 29px;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: .2s all;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__info-link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 18px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+
+  &__info-text {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  &__info-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 60px;
+
+  }
+}
