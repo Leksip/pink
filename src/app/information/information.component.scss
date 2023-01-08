@@ -1,21 +1,24 @@
-.container-inner{
+.container-inner {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-.information{
+
+.information {
   position: relative;
-  &__background{
+
+  &__background {
     position: absolute;
     background: #F2F2F2;
-    clip-path: polygon(0 37%, 100% 25%, 100% 100%, 0% 100%);
-    height: 1300px;
+    clip-path: polygon(0 35%, 100% 25%, 100% 100%, 0% 100%);
+    height: 1330px;
     width: 100%;
     left: 0;
     z-index: -1;
   }
-  &__title{
+
+  &__title {
     max-width: 780px;
     margin-top: 77px;
     margin-bottom: 70px;
@@ -27,26 +30,30 @@
     text-align: center;
     color: #283645;
   }
-  &__phones{
+
+  &__phones {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 75px;
 
   }
-  &__phone{
+
+  &__phone {
     max-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
-  &__phone-image{
+
+  &__phone-image {
     width: 300px;
     height: auto;
     margin-bottom: 60px;
   }
-  &__phone-title{
+
+  &__phone-title {
     margin-bottom: 35px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -56,7 +63,8 @@
     text-align: center;
     color: #000000;
   }
-  &__phone-information{
+
+  &__phone-information {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -66,24 +74,27 @@
     color: #283645;
   }
 
-  &__diagram-container{
+  &__diagram-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     gap: 70px;
   }
-  &__diagram{
+
+  &__diagram {
     width: 450px;
     height: auto;
   }
-  &__diagram-info{
+
+  &__diagram-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
-  &__diagram-title{
+
+  &__diagram-title {
     margin-bottom: 37px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -92,7 +103,8 @@
     line-height: 30px;
     color: #000000;
   }
-  &__diagram-text{
+
+  &__diagram-text {
     margin-bottom: 47px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -101,7 +113,8 @@
     line-height: 30px;
     color: #283645;
   }
-  &__diagram-link{
+
+  &__diagram-link {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
