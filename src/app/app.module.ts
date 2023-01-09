@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { InformationComponent } from './information/information.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
     HeaderComponent,
     StartPageComponent,
     InformationComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
