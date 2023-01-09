@@ -1,0 +1,28 @@
+.container-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer{
+  margin-top: 520px;
+  padding: 60px 0;
+  &__social{
+    display: flex;
+    gap: 10px;
+  }
+  &__social-icon{
+    transition: .2s all;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.01) translateY(-5px);
+    }
+  }
+  &__development{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+}
