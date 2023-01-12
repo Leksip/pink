@@ -1,0 +1,42 @@
+@import "src/assets/styles/button-animation";
+
+.mobile-menu {
+  position: relative;
+  z-index: 1;
+  background: #283645;
+  padding: 20px 0;
+  box-shadow: 0 1px 0 #000000;
+}
+
+.mobile-navigation {
+  position: relative;
+  transition: .5s all;
+  transform: translateY(-450px);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 25px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #283645;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+}
+
+.opened {
+  display: block;
+  transform: translateY(0);
+}

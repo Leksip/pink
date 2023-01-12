@@ -1,26 +1,25 @@
 .container-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 110px;
+  gap: 20px;
 }
 
 .header {
   background: #000000;
   opacity: 0.3;
 
-  &__logo {
-    margin-right: 170px;
-  }
-
   &__list {
     display: flex;
     justify-content: space-around;
-    gap: 70px;
+    gap: 60px;
+
   }
 
   &__list-item {
     transition: .2s all;
+
 
     &:hover {
       transform: scale(1.03);
@@ -35,5 +34,19 @@
     font-size: 18px;
     line-height: 18px;
     color: #FFFFFF;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+@media screen and (max-width: 830px) {
+  .mobile-menu {
+    display: block;
+  }
+  .header {
+    display: none;
   }
 }

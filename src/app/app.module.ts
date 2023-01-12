@@ -10,6 +10,7 @@ import { InformationComponent } from './information/information.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     InformationComponent,
     ReviewsComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

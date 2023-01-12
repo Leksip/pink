@@ -1,5 +1,8 @@
 @import "src/assets/styles/reset";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import 'node_modules/swiper/swiper';
+@import "node_modules/swiper/modules/navigation/navigation";
+@import "node_modules/swiper/modules/pagination/pagination";
 
 .html {
   box-sizing: border-box;

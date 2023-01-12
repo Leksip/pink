@@ -17,6 +17,18 @@
     align-items: center;
   }
 
+  &__swiper {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  &__swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &__quotes-img {
     margin-top: 100px;
     margin-bottom: 60px;
@@ -42,7 +54,7 @@
     line-height: 30px;
     text-align: center;
     color: #000000;
-    margin-bottom: 17px;
+    //margin-bottom: 17px;
   }
 
   &__after-info {
@@ -53,7 +65,7 @@
     line-height: 30px;
     text-align: center;
     color: #283645;
-    margin-bottom: 200px;
+    //margin-bottom: 200px;
   }
 
   &__next-button {
@@ -65,7 +77,8 @@
     cursor: pointer;
     opacity: 0.3;
     transition: .1s all;
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
       opacity: 0.5;
     }
@@ -100,7 +113,8 @@
     cursor: pointer;
     opacity: 0.3;
     transition: .1s all;
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
       opacity: 0.5;
     }
@@ -131,18 +145,18 @@
     height: 95px;
     background: #283645;
     border: 2px solid #F2F2F2;;
-    border-radius: 1px 0px 0px 0px;
+    border-radius: 1px 0 0 0;
 
-    &:nth-child(3){
+    &:nth-child(3) {
       background: url("../../assets/image/hit-ribbon.png") no-repeat #283645;
     }
   }
 
-  td{
+  td {
     vertical-align: center;
     padding: 23px 60px 23px 22px;
     border: 2px solid #E5E5E5;
-    border-radius: 1px 0px 0px 0px;
+    border-radius: 1px 0 0 0;
   }
 
   &__table-container {
@@ -174,21 +188,53 @@
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  &__table-name{
+
+  &__table-name {
     color: #283645;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     background: #FFFFFF;
   }
- &__table-yes {
+
+  &__table-yes {
     background: url("../../assets/image/yes.png") no-repeat center #FFFFFF;
   }
+
   &__table-no {
     background: url("../../assets/image/no.png") no-repeat center #FFFFFF;
   }
 }
-
-
+.swiper{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.swiper-pagination{
+  display: none;
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet{
+  background: #000;
+}
+@media  screen and (max-width: 830px){
+  .reviews{
+    &__background{
+      height: 910px;
+    }
+    &__quotes-img{
+      display: none;
+    }
+    &__swiper-slide{
+      margin-top: 100px;
+    }
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+  .swiper-pagination{
+    display: block;
+  }
+}

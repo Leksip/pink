@@ -12,10 +12,11 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 })
 export class ReviewsComponent {
   config: SwiperOptions = {
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 0,
     navigation: true,
-    pagination: { clickable: true },
     scrollbar: { draggable: true },
+    pagination: { clickable: true },
+    centeredSlides: true,
   };
 }

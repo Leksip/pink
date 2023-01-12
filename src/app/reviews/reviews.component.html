@@ -5,19 +5,30 @@
       <div class="reviews__quotes-img">
         <img src="assets/image/quotes.png" alt="">
       </div>
-      <blockquote class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-        привычные серые вещи! А еще я познакомился со своей будущей женой в
-        комментариях к выложенной фотографии!»
-      </blockquote>
-      <h2 class="reviews__after-name">Николай Петров</h2>
-      <p class="reviews__after-info">25 лет, водитель трамвая</p>
-      <div class="reviews__next-button">
-        <span class="reviews__next-line"></span>
-        <span class="reviews__next-line"></span>
-      </div>
-      <div class="reviews__back-button">
-        <span class="reviews__back-line"></span>
-        <span class="reviews__back-line"></span>
+      <div class="reviews__swiper">
+        <swiper
+          [config]="config"
+        >
+          <ng-template swiperSlide>
+            <div class="reviews__swiper-slide">
+              <blockquote class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в
+                комментариях к выложенной фотографии!»
+              </blockquote>
+              <h2 class="reviews__after-name">Николай Петров</h2>
+              <p class="reviews__after-info">25 лет, водитель трамвая</p>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="reviews__swiper-slide">
+              <blockquote class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи!»
+              </blockquote>
+              <h2 class="reviews__after-name">Николай </h2>
+              <p class="reviews__after-info">25 лет, водитель трамвая</p>
+            </div>
+          </ng-template>
+        </swiper>
       </div>
     </div>
     <table class="reviews__table">
@@ -65,7 +76,7 @@
       </tr>
       </tbody>
     </table>
-
   </div>
 </div>
+
 

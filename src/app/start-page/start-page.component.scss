@@ -7,7 +7,7 @@
   &__phone-image {
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 15%;
   }
 
   &__info {
@@ -73,5 +73,11 @@
     gap: 35px;
     margin-bottom: 60px;
 
+  }
+}
+
+@media screen and (max-width: 830px){
+  .start-page__phone-image {
+    right: 5%;
   }
 }

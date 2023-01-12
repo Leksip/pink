@@ -1,0 +1,25 @@
+<div class="mobile-menu">
+  <div class="container">
+    <div class="container-inner">
+      <div class="mobile-menu__header">
+        <img class="mobile-menu__header-logo" src="../../assets/image/logotype-white-desktop.png" height="40"
+             width="147"
+             alt="">
+      </div>
+      <button class="nav-toggle" [class.opened]="isActive" (click)="onOpen()">
+        <span class="bar-top"></span>
+        <span class="bar-mid"></span>
+        <span class="bar-bot"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<nav class="mobile-navigation" [class.opened]="isActive">
+  <ul class="mobile-navigation__list">
+    <li class="mobile-navigation__item">главная</li>
+    <li class="mobile-navigation__item">Фотографии</li>
+    <li class="mobile-navigation__item">конкурс</li>
+    <li class="mobile-navigation__item">html academy</li>
+  </ul>
+</nav>

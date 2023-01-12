@@ -1,14 +1,8 @@
 .contacts {
 
-  &__background {
-    position: absolute;
-    height: 850px;
+  &__map {
     width: 100%;
-    left: 0;
-    z-index: -1;
-    background: url("../../assets/image/map.jpg") no-repeat 50% 100%;
-    image-rendering: auto;
-    clip-path: polygon(50% 55%, 100% 40%, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(50% 30%, 100% 0%, 100% 100%, 0 100%, 0 0%);
   }
 
   &__title {
