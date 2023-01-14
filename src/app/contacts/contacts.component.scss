@@ -3,6 +3,7 @@
   &__map {
     width: 100%;
     clip-path: polygon(50% 30%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+    height: 600px;
   }
 
   &__title {
@@ -19,17 +20,19 @@
   &__container{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 10px;
   }
   &__inner{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 30px;
   }
   &__inner-title{
-    margin-bottom: 35px;
     font-family: 'Open Sans',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -47,5 +50,18 @@
     line-height: 33px;
     text-align: center;
     color: #D22856;
+  }
+}
+@media screen and (max-width: 650px){
+  .contacts{
+    &__title{
+      font-size: 24px;
+      line-height: 120%;
+    }
+    &__map {
+      width: 100%;
+      clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+      height: 300px;
+    }
   }
 }
