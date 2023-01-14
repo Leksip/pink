@@ -190,3 +190,34 @@
     }
   }
 }
+
+@media screen and (max-width: 650px){
+  .information {
+    &__background{
+      clip-path: polygon(0 25%, 100% 20%, 100% 100%, 0% 100%);
+      height: 960px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 120%;
+    }
+    &__phones-mobile{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__phone-image{
+      width: 160px;
+      order: 2;
+    }
+    &__diagram-container{
+      display: none;
+    }
+    &__phone-info{
+      align-items: center;
+      margin-top: 0;
+    }
+    &__phone-information{
+      text-align: center;
+    }
+  }
+}

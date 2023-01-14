@@ -1,6 +1,5 @@
 .start-page {
   width: 100%;
-  height: 850px;
   background: url("../../assets/image/back-desktop.jpg") no-repeat;
   position: relative;
 
@@ -68,16 +67,70 @@
 
   &__info-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 35px;
     margin-bottom: 60px;
 
   }
+
+  &__icons-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (max-width: 830px){
+.info-mobile {
+  position: relative;
+  display: none;
+  background: #1D2631;
+}
+
+@media screen and (max-width: 830px) {
   .start-page__phone-image {
     right: 5%;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .start-page {
+    margin-top: 80px;
+
+    &__icons-container {
+      display: none;
+    }
+
+    &__phone-image {
+      right: 0;
+      bottom: -30px;
+    }
+
+    &__info {
+      max-width: 100%;
+      padding: 30px 0 400px 0;
+    }
+
+    &__info-button {
+      margin: 30px 0;
+    }
+
+    &__info-icons {
+      margin-bottom: 30px;
+    }
+
+    &__info-title {
+      font-size: 24px;
+      line-height: 120%;
+    }
+
+    &__info-text {
+      margin-bottom: 30px;
+    }
+  }
+  .info-mobile {
+    display: block;
+  }
+
 }
