@@ -224,6 +224,9 @@
     width: 90%;
     margin: 0 auto;
   }
+  &__mobile{
+    display: none;
+  }
 }
 
 .swiper {
@@ -268,7 +271,9 @@
     &__table {
       display: none;
     }
-
+    &__mobile{
+      display: block;
+    }
     &__swiper {
       margin-bottom: 70px;
     }
