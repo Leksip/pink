@@ -1,0 +1,49 @@
+
+.nav-toggle {
+  position: relative;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.nav-toggle:focus {
+  outline-width: 0;
+}
+
+.nav-toggle [class*='bar-'] {
+  background: #ffffff;
+  display: block;
+  transform: rotate(0deg);
+  transition: .2s ease all;
+  border-radius: 8px;
+  height: 6px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.nav-toggle .bar-bot {
+  margin-bottom: 0;
+}
+
+.opened .bar-top {
+  transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+  transform-origin: 15% 60%;
+}
+
+.opened .bar-mid {
+  opacity: 0;
+}
+
+.opened .bar-bot {
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+  transform-origin: 0 0;
+}
+
+.container-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
