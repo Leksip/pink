@@ -76,6 +76,80 @@
       </tr>
       </tbody>
     </table>
+    <div class="reviews__mobile">
+      <swiper
+        [config]="config"
+      >
+        <ng-template swiperSlide>
+          <table class="reviews__table-mobile">
+            <thead>
+            <th class="reviews__th-mobile">
+              <div class="reviews__table-container">
+                <h2 class="reviews__table-title">База</h2>
+                <p class="reviews__table-text">1,99 USD</p>
+              </div>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-no">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-no">Комментарии</td>
+            </tr>
+            </tbody>
+          </table>
+        </ng-template>
+        <ng-template swiperSlide>
+          <table class="reviews__table-mobile">
+            <thead>
+            <th class="reviews__th-mobile_hit">
+              <div class="reviews__table-container">
+                <h2 class="reviews__table-title">СТАНДАРТ</h2>
+                <p class="reviews__table-text">3,99 USD</p>
+              </div>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-no">Комментарии</td>
+            </tr>
+            </tbody>
+          </table>
+
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <table class="reviews__table-mobile">
+            <thead>
+            <th class="reviews__th-mobile">
+              <div class="reviews__table-container">
+                <h2 class="reviews__table-title">АНЛИМ</h2>
+                <p class="reviews__table-text">9,99 USD</p>
+              </div>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="reviews__table-name reviews__table-yes">Комментарии</td>
+            </tr>
+            </tbody>
+          </table>
+        </ng-template>
+      </swiper>
+    </div>
   </div>
 </div>
 

@@ -185,38 +185,45 @@
     &__diagram-container {
       margin-top: 100px;
     }
-    &__diagram{
+
+    &__diagram {
       min-width: 230px;
     }
   }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
   .information {
-    &__background{
-      clip-path: polygon(0 25%, 100% 20%, 100% 100%, 0% 100%);
+    &__background {
+      clip-path: polygon(0 25%, 100% 23%, 100% 100%, 0% 100%);
       height: 960px;
     }
-    &__title{
+
+    &__title {
       font-size: 24px;
       line-height: 120%;
     }
-    &__phones-mobile{
+
+    &__phones-mobile {
       flex-wrap: wrap;
       justify-content: center;
     }
-    &__phone-image{
+
+    &__phone-image {
       width: 160px;
       order: 2;
     }
-    &__diagram-container{
+
+    &__diagram-container {
       display: none;
     }
-    &__phone-info{
+
+    &__phone-info {
       align-items: center;
       margin-top: 0;
     }
-    &__phone-information{
+
+    &__phone-information {
       text-align: center;
     }
   }
